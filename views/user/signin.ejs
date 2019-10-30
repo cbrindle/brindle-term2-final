@@ -3,9 +3,10 @@
 
 <% include ../partials/head %>
 
-<body class=" text-center ">
+<body class=" text-center" style="background-image: radial-gradient(white, #F5F5F5);">
     <link rel="stylesheet" href="/stylesheets/signin.css">
     <% include ../partials/nav %>
+    <img src="/images/scroll.jpg" style="position: absolute; justify-self: center; align-self: center; z-index: -1;" height="100%">
 
     <% for (let err of loginMessage) { %>
 
@@ -19,15 +20,14 @@
 
     <form class="form-signin" method="POST" action="/user/signin">
 
-        <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+        <!-- <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1> -->
         <label for="inputEmail" class="sr-only">Email address</label>
         <input type="text" id="inputEmail" class="form-control" placeholder="Email address" name="email">
         <br>
         <label for="inputPassword" class="sr-only">Password</label>
         <input type="text" id="inputPassword" class="form-control" placeholder="Password" name="password">
         <br>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign In</button>
-        <p class="mt-5 mb-3 text-muted">&copy; 2017-2019</p>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" style="font-family: fantasy;">Sign In</button>
     </form>
 </body>
 

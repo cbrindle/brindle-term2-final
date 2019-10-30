@@ -4,8 +4,9 @@
 <% include ../partials/head %>
 <link rel="stylesheet" href="/stylesheets/signin.css">                                                                                             
 
-<body class=" text-center ">
+<body class=" text-center" style="background-image: radial-gradient(white, #F5F5F5);">
     <% include ../partials/nav %>
+    <img src="/images/scroll.jpg" style="justify-self: center; align-self: center; z-index: -1; position: absolute;" height="100%" />
     <br>
 
     <form class="form-signin" method="POST" action="/user/signup" width="50%">
@@ -25,7 +26,6 @@
             </button>
         </div>
         <%}%>
-        <h1 class="h3 mb-3 font-weight-normal">Please sign up</h1>
         <label for="inputName" class="sr-only">Name</label>
         <input type="text" id="inputName" class="form-control" placeholder="Name" name="name">
         <br>
@@ -35,8 +35,7 @@
         <label for="inputPassword" class="sr-only">Password</label>
         <input type="text" id="inputPassword" class="form-control" placeholder="Password" name="password">
         <br>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
-        <p class="mt-5 mb-3 text-muted">&copy; 2017-2019</p>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" style="font-family: fantasy;">Sign up</button>
     </form>
 </body>
 
