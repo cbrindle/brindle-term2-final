@@ -13,4 +13,12 @@ router.get('/messageBoard', (req, res) => {
     }
 })
 
+router.get('/instructions', (req, res) => {
+    if (req.isAuthenticated()) {
+        return res.render('game/instructions')
+    } else {
+        res.render('home/home')
+    }
+})
+
 module.exports = router;
