@@ -1,5 +1,7 @@
 const express = require('express');
 const router = express.Router();
+const browserSync = require('browser-sync');
+const path = require('path');
 
 router.get('/', function (req, res, next) {
     res.send('hit GAME')
@@ -19,6 +21,11 @@ router.get('/instructions', (req, res) => {
     } else {
         res.render('home/home')
     }
+})
+
+router.get('/launch', (req, res) => {
+    browserSync({server: path.join(__dirname, '../../gameFiles')})
+    res.redirect('/home')
 })
 
 module.exports = router;
