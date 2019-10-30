@@ -14,6 +14,7 @@ let MongoStore = require('connect-mongo')(session)
 
 // Place router connections here
 indexRouter = require('./routes')
+userRouter = require('./routes/users/users')
 //
 
 require('dotenv').config()
@@ -57,7 +58,7 @@ app.use(flash())
 
 app.use(passport.initialize())
 app.use(passport.session())
-// require('./lib/passport/passport.js')(passport)
+require('./lib/passport/passport.js')(passport)
 
 
 app.use(expressValidator({
@@ -92,6 +93,7 @@ app.use((req, res, next) => {
 // Place router functions here
 //
 app.use('/', indexRouter);
+app.use('/users', userRouter);
 
 
 // catch 404 and forward to error handler

@@ -28,24 +28,20 @@
         <ul class="navbar-nav ml-auto">
             <% if (!user) { %>
             <li class="nav-item">
-                <a href="/api/users/signup" class='nav-link'>Sign up <span class='sr-only'>(current)</span></a>
+                <a href="/users/signup" class='nav-link'>Sign up <span class='sr-only'>(current)</span></a>
             </li>
             <li class="nav-item">
-                <a href="/api/users/signin" class='nav-link'>Sign in </a>
+                <a href="/users/signin" class='nav-link'>Sign in </a>
             </li>
             <% } else {%>
 
             <li class="nav-item">
                 <a href="/api/users/profile" class='nav-link'>Logged in as <span
-                        style="color: orange"><%=user.profile.name%>
+                        style="color: orange"><%= user.profile.name%>
                     </span>
                 </a>
             </li>
-            <li class="nav-item">
-                <a href="/api/cart"><span class="fa-stack has-badge" data-count=<%= cartTotal %>><i
-                            class="fas fa-shopping-bag"></i></span></a>
-            </li>
-            <a href="/api/users/logout" class='nav-link'>Log out</a>
+            <a href="/users/logout" class='nav-link'>Log out</a>
 
             <% } %>
         </ul>
