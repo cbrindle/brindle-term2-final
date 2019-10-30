@@ -1,0 +1,38 @@
+body {
+    background-image: url('/images/title-bg-mod.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+#app {
+    display: grid;
+    height: 100vh;
+}
+
+#main {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+}
+
+#main-left {
+    display: flex;
+    grid-area: 1 / 1 / span 1 span 1;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-right {
+    display: flex;
+    flex-direction: column;
+    grid-area: 1 / 2 / span 1 / span 1;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: 'Courgette', cursive;
+    font-size: 1.7em;
+}

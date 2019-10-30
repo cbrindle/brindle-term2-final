@@ -2,11 +2,30 @@
 <html lang="en">
 
 <% include ../partials/head %>
+<link rel="stylesheet" href="/stylesheets/game-main.css">
+<link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
 
 <body>
     <% include ../partials/nav %>
-
-    <p>GOT LOGGED IN GAME PAGE</p>
-    
+    <div id="app">
+        <div id="main">
+            <div id="main-left">
+                <img src="/images/party-group.jpg" width="75%">
+            </div>
+            <div id="main-right">
+                <img src="/images/game-menu-text.png">
+                <br>
+                <br>
+                <a href="#">Read game play instructions</a>
+                <br>
+                <a href="#">Post on message board</a>
+                <br>
+                <a href="/user/profile">Edit profile</a>
+                <br>
+                <br>
+                <a href="#" class="btn btn-primary btn-lg">LAUNCH GAME</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
