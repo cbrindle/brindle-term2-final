@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item">
+
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mx-auto align-middle">
+            <span style="color: white; font-family: fantasy; font-size: 1.2em">Tales from Swiftfell</span>
+        </ul>
+    </div>
+
+    
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+            <% if (!user) { %>
+            <li class="nav-item">
+                <a href="/api/users/signup" class='nav-link'>Sign up <span class='sr-only'>(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a href="/api/users/signin" class='nav-link'>Sign in </a>
+            </li>
+            <% } else {%>
+
+            <li class="nav-item">
+                <a href="/api/users/profile" class='nav-link'>Logged in as <span
+                        style="color: orange"><%=user.profile.name%>
+                    </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/api/cart"><span class="fa-stack has-badge" data-count=<%= cartTotal %>><i
+                            class="fas fa-shopping-bag"></i></span></a>
+            </li>
+            <a href="/api/users/logout" class='nav-link'>Log out</a>
+
+            <% } %>
+        </ul>
+    </div>
+</nav>
+<br><br>

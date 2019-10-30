@@ -1,0 +1,98 @@
+/* body {
+    
+} */
+
+.main-font {
+    color: black;
+    font-family: 'Courgette', cursive;
+}
+
+#appSec1 {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+    background-image: url('../images/title-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#left-sec1 {
+    display: flex;
+    grid-area: 1 / 1 / span 1 / span 1;
+    justify-content: center;
+    align-items: center;
+}
+
+#right-sec1 {
+    display: flex;
+    flex-direction: column;
+    grid-area: 1 / 2 / span 1 / span 1;
+    justify-content: center;
+}
+
+#appSec2 {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 100%;
+    grid-template-columns: 100%;
+    background-image: url('../images/world-map-mod.jpg');
+    background-size: contain;
+    background-position: center;
+}
+
+#left-sec2 {
+    display: grid;
+    grid-template-rows: 30% 50% 20%;
+    grid-template-columns: 100%;
+}
+
+#left-sec2-top {
+    display: flex;
+    flex-direction: column;
+    grid-area: 1 / 1 / span 1 / span 1;
+    justify-content: center;
+    font-size: 2em;
+}
+
+#left-sec2-bottom {
+    display: flex;
+    grid-area: 2 / 1 / span 1 / span 1;
+}
+
+#appSec3 {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    background-image: linear-gradient(to bottom, #F7EBC3, #C6CDDE);
+}
+
+#left-sec3 {
+    display: flex;
+    grid-area: 1 / 1 / span 1 / span 1;
+    justify-content: center;
+    align-items: center;
+}
+
+#right-sec3 {
+    display: flex;
+    grid-area: 1 / 2 / span 1 / span 1;
+    justify-content: center;
+    align-items: center;
+}
+
+#appSec4 {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    background-image: linear-gradient(to bottom, #C7CEDF, white);
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border: 1px solid black;
+}
