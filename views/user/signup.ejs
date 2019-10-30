@@ -8,7 +8,7 @@
     <% include ../partials/nav %>
     <br>
 
-    <form class="form-signin" method="POST" action="/users/signup" width="50%">
+    <form class="form-signin" method="POST" action="/user/signup" width="50%">
         <%for (let i= 0 ; i <errors.length; i++){%>
         <div class="alert alert-danger alert-dismissible fade show" role="alert">
             <%= errors[i].message%>

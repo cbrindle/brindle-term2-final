@@ -25,7 +25,7 @@ router.get('/signin', (req, res) => {
 
 router.post('/signin', passport.authenticate('local-login', {
   successRedirect: '/home',
-  failureRedirect: '/users/signin',
+  failureRedirect: '/user/signin',
   failureFlash: true
 }))
 
@@ -34,5 +34,15 @@ router.get('/logout', (req, res) => {
 
   res.redirect('/');
 })
+
+router.get('/profile', (req, res) => {
+  if (req.isAuthenticated()) {
+    return res.render('user/profile')
+  } else {
+    res.redirect('/home')
+  }
+})
+
+router.post('/profile', userController.updateProfile)
 
 module.exports = router;

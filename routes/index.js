@@ -7,7 +7,11 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/home', (req, res) => {
-  res.render('home/home')
+  if (req.isAuthenticated()) {
+    return res.render('game/main')
+  } else {
+    res.render('home/home')
+  }
 })
 
 module.exports = router;

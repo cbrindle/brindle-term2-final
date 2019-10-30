@@ -14,7 +14,7 @@ module.exports = {
             }
             if (user) {
                 req.flash('errors', 'User already exists')
-                return res.redirect(301, '/users/signup')
+                return res.redirect(301, '/user/signup')
             } else {
                 const newUser = new User
                 newUser.email = req.body.email
@@ -52,21 +52,21 @@ module.exports = {
                 }
                 if (!result) {
                     req.flash('errors', 'Old password is incorrect')
-                    res.status(302).redirect('/api/users/profile')
+                    res.status(302).redirect('/user/profile')
                     return
                 }
             })
         }
         if (req.body.password === '' && (req.body.password2 != '' || req.body.password3 != '')) {
             req.flash('errors', 'Must enter your old password to change it')
-            res.status(302).redirect('/api/users/profile')
+            res.status(302).redirect('/user/profile')
             return
         }
 
         if (req.body.password2 != '' && req.body.password3 != '') {
             if (req.body.password2 != req.body.password3) {
                 req.flash('errors', 'New password must match CONFIRM')
-                res.status(302).redirect('/api/users/profile')
+                res.status(302).redirect('/user/profile')
                 return
             } else if (req.body.password2 === req.body.password3) {
                 bcrypt.hash(req.body.password2, 10, (err, hash) => {
@@ -85,13 +85,10 @@ module.exports = {
             if (req.body.email != '') {
                 req.user.email = req.body.email
             }
-            if (req.body.address != '') {
-                req.user.address = req.body.address
-            }
 
             req.user.save()
             req.flash('success', 'User updated successfully')
-            res.status(302).redirect('/api/users/profile')
+            res.status(302).redirect('/user/profile')
             return
 
         }, 200);
