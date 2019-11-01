@@ -16,6 +16,7 @@ let MongoStore = require('connect-mongo')(session)
 indexRouter = require('./routes')
 userRouter = require('./routes/users/users')
 gameRouter = require('./routes/game/game')
+adminRouter = require('./routes/admin/admin')
 //
 
 require('dotenv').config()
@@ -96,6 +97,7 @@ app.use((req, res, next) => {
 app.use('/', indexRouter);
 app.use('/user', userRouter);
 app.use('/game', gameRouter);
+app.use('/admin', adminRouter);
 
 
 // catch 404 and forward to error handler

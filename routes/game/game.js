@@ -2,14 +2,17 @@ const express = require('express');
 const router = express.Router();
 const browserSync = require('browser-sync');
 const path = require('path');
+const messageBoardController = require('../admin/controllers/messageBoardController')
 
 router.get('/', function (req, res, next) {
     res.send('hit GAME')
 });
 
-router.get('/messageBoard', (req, res) => {
+router.get('/messageBoard', messageBoardController.loadCategories)
+
+router.get('/messageBoard/:category', (req, res) => {
     if (req.isAuthenticated()) {
-        return res.render('game/messageBoard')
+        return res.render('game/mb-category')
     } else {
         res.render('home/home')
     }

@@ -12,32 +12,42 @@
             <h1 class="text-center"><b>Message Board</b></h1> 
         </div>
         <br>
+        
         <div id="board-main">
-            <div class="msg-icon">
-                <i class="far fa-folder fa-3x"></i>
+            <div class="row pl-3">
+
+            <!-- Add EJS here to add message board content -->
+            <% for (let item of data) { %>
+                <div class="msg-icon">
+                    <i class="far fa-folder fa-3x"></i>
+                </div>
+
+                <div class="category-area">
+                    <p><a href="/game/messageBoard/<%= item._id %>"><b><%= item.category.name %></b></a></p>
+                    <p>Description of contents</p>
+                </div>
+
+                <div class="topics-num-area">
+                    <p><b>(num)</b></p>
+                    <p>Topics</p>
+                </div>
+
+                <div class="posts-num-area">
+                    <p><b>(num)</b></p>
+                    <p>Posts</p>
+                </div>
+
+                <div class="last-posting-area">
+                    <p>Name of last post</p>
+                    <p>by (user), (time stamp)</p>
+                </div>
+
+                <% } %>
+                <!-- Close EJS here -->
+
+
             </div>
 
-            <div class="category-area">
-                <p><b>Category Name</b></p>
-                <p>Description of contents</p>
-            </div>
-
-            <div class="topics-num-area">
-                <p><b>(num)</b></p>
-                <p>Topics</p>
-            </div>
-
-            <div class="posts-num-area">
-                <p><b>(num)</b></p>
-                <p>Posts</p>
-            </div>
-
-            <div class="last-posting-area">
-                <p>Name of last post</p>
-                <p>by (user), (time stamp)</p>
-            </div>
-
-    
         </div>
         <br><br><br><br><br>
         <div class="text-center">

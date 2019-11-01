@@ -3,6 +3,10 @@ h1 {
     text-shadow: 3px 2px gray;
 }
 
+a, a:visited .category-area {
+    color: black;
+}
+
 .jumbotron {
     background-image: linear-gradient(to right, rgb(165, 91, 42), rgb(207, 160, 129));
 }
