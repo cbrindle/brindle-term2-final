@@ -1,0 +1,65 @@
+h1 {
+    font-family: fantasy;
+    text-shadow: 3px 2px gray;
+}
+
+.jumbotron {
+    background-image: linear-gradient(to right, rgb(165, 91, 42), rgb(207, 160, 129));
+}
+
+#board-main {
+    display: flex;
+    flex-direction: row;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.msg-icon {
+    height: 15vh;
+    width: 5vw;
+    background-color: rgb(165, 91, 42);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-area {
+    display: flex;
+    flex-direction: column;
+    height: 15vh;
+    width: 40vw;
+    background-color: rgb(207, 160, 129);
+    padding: 0 0 0 2%;
+    justify-content: center;
+}
+
+.topics-num-area {
+    display: flex;
+    flex-direction: column;
+    height: 15vh;
+    width: 10vw;
+    background-color: rgb(207, 160, 129);
+    align-items: center;
+    justify-content: center;
+}
+
+.posts-num-area {
+    display: flex;
+    flex-direction: column;
+    height: 15vh;
+    width: 10vw;
+    background-color: rgb(207, 160, 129);
+    align-items: center;
+    justify-content: center;
+}
+
+.last-posting-area {
+    display: flex;
+    flex-direction: column;
+    height: 15vh;
+    width: 25vw;
+    background-color: rgb(207, 160, 129);
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 2% 0 0;
+}
