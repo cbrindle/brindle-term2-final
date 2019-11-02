@@ -5,7 +5,76 @@
 
 <body>
     <% include ../partials/nav %>
-    
-    
+    <br>
+    <div class="jumbotron mx-auto">
+        <h1><%= data.category.name %></h1>
+    </div>
+    <br>
+
+    <div id="board-main">
+        <div class="row pl-3">
+        <!-- Add EJS here to add message board content -->
+        
+        <% for (let i = 0; i < data.category.topics.length; i++) { %>
+                <div class="msg-icon">
+                    <a href="/game/messageBoard/#"><i class="far fa-sticky-note fa-3x"></i></a>
+                </div>
+
+                <div class="category-area">
+                    <a href="/game/messageBoard/#"><b>Name</b></a>
+                    <p>(place holder)</p>
+                </div>
+                
+                <!-- Close EJS here -->
+                <% } %>
+        </div>
+    </div>
+        
+        <br><br><br>
+        <div class="row text-center">
+            <div class="col">
+                <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#newPost"
+                    style="width: 12vw;">Post New Topic</button>
+            </div>
+            <div class="col">
+                <a href="/game/messageBoard" class="btn btn-primary btn-lg" style="width: 12vw;">Go Back</a>
+                <br><br><br>
+            </div>
+
+            <!-- Modal Code -->
+
+            <div class="modal fade" id="newPost" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="newPostLabel">New Post</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+
+                            <form method="POST" action="/game/messageBoard/<%= data._id %>">
+                                <div class="form-group">
+                                    <input class="form-control" id="subjectText" name="subjectText" aria-describedby="subjectText" placeholder="Subject">
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" id="postText" name="postText"
+                                        aria-describedby="postText" style="height: 150px;" placeholder="message"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Post</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="/stylesheets/game-main.css">
+    <link rel="stylesheet" href="/stylesheets/mb-category.css">
 </body>
+
 </html>

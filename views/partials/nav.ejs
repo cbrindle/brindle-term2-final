@@ -1,4 +1,5 @@
-<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: rgba(165, 42, 42, 0.75);">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: rgba(165, 42, 42, 0.75); height: 9vh;">
+    
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
         aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -10,9 +11,24 @@
                 <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
             </li>
 
-            <li class="nav-item">
-
+            <% if (user) { %>
+            <li class="nav-item ml-5">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" style="background-color: rgb(143, 68, 60);;" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Menu
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="/home">Game Menu</a>
+                        <a class="dropdown-item" href="/game/instructions">Instructions</a>
+                        <a class="dropdown-item" href="/game/messageBoard">Message Boad</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/user/profile">Edit Profile</a>
+                    </div>
+                </div>
             </li>
+            <% } %>
+
         </ul>
 
     </div>
@@ -37,7 +53,7 @@
 
             <li class="nav-item">
                 <a href="/user/profile" class='nav-link'>Logged in as <span
-                        style="color: orange"><%= user.profile.name%>
+                        style="color: rgb(92, 223, 17)"><%= user.profile.name%>
                     </span>
                 </a>
             </li>

@@ -32,7 +32,7 @@ router.post('/signin', passport.authenticate('local-login', {
 router.get('/logout', (req, res) => {
   req.logout();
 
-  res.redirect('/');
+  res.redirect('/home');
 })
 
 router.get('/profile', (req, res) => {

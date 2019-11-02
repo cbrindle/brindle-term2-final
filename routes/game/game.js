@@ -8,15 +8,15 @@ router.get('/', function (req, res, next) {
     res.send('hit GAME')
 });
 
+
 router.get('/messageBoard', messageBoardController.loadCategories)
 
-router.get('/messageBoard/:category', (req, res) => {
-    if (req.isAuthenticated()) {
-        return res.render('game/mb-category')
-    } else {
-        res.render('home/home')
-    }
-})
+
+router.get('/messageBoard/:category', messageBoardController.loadTopic)
+
+
+router.post('/messageBoard/:category', messageBoardController.updateTopics)
+
 
 router.get('/instructions', (req, res) => {
     if (req.isAuthenticated()) {
@@ -25,6 +25,7 @@ router.get('/instructions', (req, res) => {
         res.render('home/home')
     }
 })
+
 
 router.get('/launch', (req, res) => {
     browserSync({server: path.join(__dirname, '../../gameFiles')})

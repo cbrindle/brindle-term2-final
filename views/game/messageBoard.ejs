@@ -2,14 +2,12 @@
 <html lang="en">
 
 <% include ../partials/head %>
-<link rel="stylesheet" href="/stylesheets/game-main.css">
-<link rel="stylesheet" href="/stylesheets/message-board.css">
 
 <body>
     <% include ../partials/nav %>
     <br>
-        <div class="jumbotron mx-auto" style="width: 90%;">
-            <h1 class="text-center"><b>Message Board</b></h1> 
+        <div class="jumbotron mx-auto">
+            <h1><b>Message Board</b></h1> 
         </div>
         <br>
         
@@ -19,12 +17,12 @@
             <!-- Add EJS here to add message board content -->
             <% for (let item of data) { %>
                 <div class="msg-icon">
-                    <i class="far fa-folder fa-3x"></i>
+                    <a href="/game/messageBoard/<%= item._id %>"><i class="far fa-folder fa-3x"></i></a>
                 </div>
 
                 <div class="category-area">
-                    <p><a href="/game/messageBoard/<%= item._id %>"><b><%= item.category.name %></b></a></p>
-                    <p>Description of contents</p>
+                    <a href="/game/messageBoard/<%= item._id %>"><b><%= item.category.name %></b></a>
+                    <p><%= item.category.description %></p>
                 </div>
 
                 <div class="topics-num-area">
@@ -53,9 +51,9 @@
         <div class="text-center">
             <a href="/home" class="btn btn-primary btn-lg">Back to Menu</a>
         </div>
+
+        <link rel="stylesheet" href="/stylesheets/game-main.css">
+        <link rel="stylesheet" href="/stylesheets/message-board.css">
     
 </body>
-
-    
-
 </html>

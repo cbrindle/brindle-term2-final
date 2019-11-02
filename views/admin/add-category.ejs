@@ -31,8 +31,14 @@
     <form class="justify-content-center" method="POST" action="/admin/add-category">
         <div class="form-group">
             <label for="newCat">Category Name</label>
-            <input type="text" style="width: 40%;" class="form-control" id="newCat" name="newCat" aria-describedby="emailHelp"
+            <input type="text" style="width: 40%;" class="form-control" id="newCat" name="newCat" aria-describedby="newCat"
                 placeholder="enter category">
+        </div>
+
+        <div class="form-group">
+            <label for="description">Description</label>
+            <input type="text" style="width: 40%;" class="form-control" id="description" name="description" aria-describedby="description"
+                placeholder="description">
         </div>
         <button class="btn btn-lg btn-primary btn-block" style="width: 40%;" type="submit">Add</button>
     </form>
