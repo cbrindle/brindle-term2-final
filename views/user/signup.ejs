@@ -2,6 +2,7 @@
 <html lang="en">
 
 <% include ../partials/head %>
+<% console.log(data) %>
 <link rel="stylesheet" href="/stylesheets/signin.css">                                                                                             
 
 <body class=" text-center" style="background-image: radial-gradient(white, #F5F5F5);">
@@ -34,6 +35,8 @@
         <br>
         <label for="inputPassword" class="sr-only">Password</label>
         <input type="text" id="inputPassword" class="form-control" placeholder="Password" name="password">
+        <br>
+        <input type="text" id="inputAdmin" class="form-control" placeholder="admin code" name="adminCode">
         <br>
         <button class="btn btn-lg btn-primary btn-block" type="submit" style="font-family: fantasy;">Sign up</button>
     </form>

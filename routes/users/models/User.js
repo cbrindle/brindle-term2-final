@@ -7,6 +7,7 @@ let UserSchema = new mongoose.Schema({
         name: { type: String, default: "" },
         picture: { type: String, default: "" }
     },
+    admin: { type: Boolean, default: false }
 })
 
 module.exports = mongoose.model('user', UserSchema)

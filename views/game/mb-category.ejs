@@ -5,6 +5,8 @@
 
 <body>
     <% include ../partials/nav %>
+    <% let topic = data.category.topics %>
+    <% console.log(topic[0].posts.length) %>
     <br>
     <div class="jumbotron mx-auto">
         <h1><%= data.category.name %></h1>
@@ -15,14 +17,18 @@
         <div class="row pl-3">
         <!-- Add EJS here to add message board content -->
         
-        <% for (let i = 0; i < data.category.topics.length; i++) { %>
+        <% for (let i = (data.category.topics.length - 1); i >= 0; i--) { %>
                 <div class="msg-icon">
                     <a href="/game/messageBoard/#"><i class="far fa-sticky-note fa-3x"></i></a>
                 </div>
 
                 <div class="category-area">
-                    <a href="/game/messageBoard/#"><b>Name</b></a>
-                    <p>(place holder)</p>
+                    <a href="/game/messageBoard/#"><b><%= topic[i].subject %></b></a>
+                    
+                </div>
+
+                <div class="info-area">
+                    <p>Last by: <span class="author-color"><%= topic[i].posts[(topic[i].posts.length - 1)].author %></span></p>
                 </div>
                 
                 <!-- Close EJS here -->

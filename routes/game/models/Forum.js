@@ -1,4 +1,5 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
+const moment = require('moment');
 
 let ForumSchema = new mongoose.Schema({
     category: { 
@@ -6,8 +7,11 @@ let ForumSchema = new mongoose.Schema({
         description: { type: String, default: "" },
         topics: [{
             subject: { type: String, default: "" },
-            author: { type: String, default: "" },
-            text: { type: String, default: "" }
+            posts: [{
+                text: { type: String, default: "" },
+                author: { type: String, default: "" },
+                timeStamp: { type: String, default: moment().format('MMMM Do YYYY, h:mm:ss a') }
+                }]
             }]
         }
     },

@@ -1,4 +1,5 @@
 const Forum = require('../../game/models/Forum')
+const moment = require('moment')
 
 module.exports = {
     addBoardCat: (req, res) => {
@@ -51,16 +52,15 @@ module.exports = {
     updateTopics: (req, res) => {
         Forum.findOne({ _id: req.params.category })
             .then(data => {
-                console.log(`data: `, data);
-                console.log(`req.body: `, req.body);
                 data.category.topics.push({
                     subject: req.body.subjectText,
-                    author: req.user.name,
-                    text: req.body.postText }
-                )
+                    posts: [{
+                        text: req.body.postText,
+                        author: req.user.profile.name,
+                    }]
+                })
                 data.save()
                     .then(newData => {
-                        console.log(req.params);
                         res.redirect(`/game/messageBoard/${req.params.category}`)
                     })
                     .catch(err => {

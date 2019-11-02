@@ -20,6 +20,11 @@ module.exports = {
                 newUser.email = req.body.email
                 newUser.profile.name = req.body.name
                 newUser.profile.picture = getGravatar(req.body.email)
+                if (req.body.adminCode === 'admin') {
+                    newUser.admin = true;
+                } else {
+                    newUser.admin = false;
+                }
 
                 bcrypt.hash(req.body.password, 10, (err, hash) => {
                     if (err) {

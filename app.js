@@ -9,6 +9,7 @@ const createError = require('http-errors');
 const cookieParser = require('cookie-parser');
 const expressValidator = require('express-validator');
 const methodOverride = require('method-override');
+const moment = require('moment');
 
 let MongoStore = require('connect-mongo')(session)
 

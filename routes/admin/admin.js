@@ -3,7 +3,12 @@ const router = express.Router();
 const messageBoardController = require('./controllers/messageBoardController')
 
 router.get('/', (req, res) => {
-    res.render('admin/admin')
+    if (req.isAuthenticated() && req.user.admin === true) {
+        res.render('admin/admin')
+    } else {
+        req.flash('errors', 'You do not have credentials to access the admin section')
+        res.redirect('/home')
+    }
 })
 
 router.get('/add-category', (req, res) => {
