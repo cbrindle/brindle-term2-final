@@ -45,4 +45,9 @@ router.get('/profile', (req, res) => {
 
 router.post('/profile', userController.updateProfile)
 
+
+router.get('/passwordrecovery', (req, res) => {
+  res.render('user/password-recovery')
+})
+
 module.exports = router;

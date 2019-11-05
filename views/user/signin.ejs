@@ -3,10 +3,10 @@
 
 <% include ../partials/head %>
 
-<body class=" text-center" style="background-image: radial-gradient(white, #F5F5F5); opacity: 0.85;">
+<body class=" text-center" style="background-image: radial-gradient(white, rgb(226, 186, 134));">
     <link rel="stylesheet" href="/stylesheets/signin.css">
     <% include ../partials/nav %>
-    <img src="/images/scroll.jpg" style="position: absolute; justify-self: center; align-self: center; z-index: -1;" height="100%">
+    <img src="/images/scroll.png" style="position: absolute; justify-self: center; align-self: center; z-index: -1;" height="100%">
 
     <% for (let err of loginMessage) { %>
 
@@ -28,7 +28,11 @@
         <input type="text" id="inputPassword" class="form-control" placeholder="Password" name="password">
         <br>
         <button class="btn btn-lg btn-primary btn-block" type="submit" style="font-family: fantasy;">Sign In</button>
+        <br>
+        <a style="color: blue; font-family: fantasy;" href="/user/passwordrecovery"><b>Click here to recover password</b></a>
     </form>
+    
+    </a>
 </body>
 
 
