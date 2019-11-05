@@ -5,55 +5,11 @@
 
 <body>
     <% include ../partials/nav %>
-    <br>
-        <div class="jumbotron mx-auto">
-            <h1><b>Message Board</b></h1> 
-        </div>
-        <br>
-        
-        <div id="board-main">
-            <div class="row pl-3">
-
-            <!-- Add EJS here to add message board content -->
-            <% for (let item of data) { %>
-                <div class="msg-icon">
-                    <a href="/game/messageBoard/<%= item._id %>"><i class="far fa-folder fa-3x"></i></a>
-                </div>
-
-                <div class="category-area">
-                    <a href="/game/messageBoard/<%= item._id %>"><b><%= item.category.name %></b></a>
-                    <p><%= item.category.description %></p>
-                </div>
-
-                <div class="topics-num-area">
-                    <p><b>(num)</b></p>
-                    <p>Topics</p>
-                </div>
-
-                <div class="posts-num-area">
-                    <p><b>(num)</b></p>
-                    <p>Posts</p>
-                </div>
-
-                <div class="last-posting-area">
-                    <p>Name of last post</p>
-                    <p>by (user), (time stamp)</p>
-                </div>
-
-                <% } %>
-                <!-- Close EJS here -->
-
-
-            </div>
-
-        </div>
-        <br><br><br><br><br>
-        <div class="text-center">
-            <a href="/home" class="btn btn-primary btn-lg">Back to Menu</a>
-        </div>
-
-        <link rel="stylesheet" href="/stylesheets/game-main.css">
-        <link rel="stylesheet" href="/stylesheets/message-board.css">
+    <p></p>
     
+    <p><iframe class="forum-style" border="0" src="http://tfs-forum.forumotion.com" width="712"></iframe></p>
+
+
 </body>
+<link rel="stylesheet" href="/stylesheets/message-board.css">
 </html>

@@ -1,6 +1,5 @@
 const express = require('express');
 const router = express.Router();
-const messageBoardController = require('./controllers/messageBoardController')
 
 router.get('/', (req, res) => {
     if (req.isAuthenticated() && req.user.admin === true) {
@@ -14,7 +13,5 @@ router.get('/', (req, res) => {
 router.get('/add-category', (req, res) => {
     res.render('admin/add-category')
 })
-
-router.post('/add-category', messageBoardController.addBoardCat)
 
 module.exports = router;

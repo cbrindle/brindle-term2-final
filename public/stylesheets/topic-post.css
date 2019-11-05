@@ -1,0 +1,42 @@
+body {
+    background-image: url('/images/title-bg-mod.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.post-main {
+    display: grid;
+    grid-template-rows: 60% 40%;
+    grid-template-columns: 25% 75%;
+    height: 40vh;
+    width: 70vw;
+    margin: auto;
+    border: 2px solid black;
+}
+
+.post-left-top {
+    display: flex;
+    grid-area: 1 / 1 / span 1 / span 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-left-top img {
+    height: 90%;
+}
+
+.post-left-author {
+    display: flex;
+    grid-area: 2 / 1 / span 1 / span 1;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85em;
+}
+
+.post-right-text {
+    display: flex;
+    flex-direction: column;
+    grid-area: 1 / 2 / span 2 / span 1;
+    justify-content: center;
+    align-items: center;
+}
