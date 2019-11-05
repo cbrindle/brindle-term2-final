@@ -3,6 +3,7 @@ const router = express.Router();
 const signUpValidation = require('./utils/signUpValidation');
 const userController = require('./controllers/userController')
 const passport = require('passport');
+const User = require('./models/User')
 
 
 /* GET users listing. */
@@ -49,5 +50,27 @@ router.post('/profile', userController.updateProfile)
 router.get('/passwordrecovery', (req, res) => {
   res.render('user/password-recovery')
 })
+
+
+router.post('/passwordrecovery', userController.recoverPassword)
+
+
+router.get('/passwordrecovery/:email', (req, res) => {
+  User.findOne({ email: req.params.email })
+    .then(user => {
+      if (!user) {
+        res.render('home/home')
+      } else {
+        res.render('user/password-change', { params: req.params.email })
+      }
+    })
+    .catch(err => {
+      throw Error(err)
+    })
+  }
+)
+
+
+router.post('/passwordrecovery/:email', userController.updatePassword)
 
 module.exports = router;
