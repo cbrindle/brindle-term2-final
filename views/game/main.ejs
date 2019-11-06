@@ -28,7 +28,7 @@
                 <br>
                 <a href="/game/instructions">Read game play instructions</a>
                 <br>
-                <a href="/game/messageboard">Post on message board</a>
+                <button onclick="loadMessageBoard()">Post on message board</a>
                 <br>
                 <a href="/user/profile">Edit profile</a>
                 <br>
@@ -42,6 +42,10 @@
     <script>
     function launchGame() {
         window.open('/game/launch')
+    }
+
+    function loadMessageBoard() {
+        window.open('http://tfs-forum.forumotion.com/')
     }
     </script>
 </body>

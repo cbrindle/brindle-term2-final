@@ -8,7 +8,7 @@ router.get('/', function (req, res, next) {
 
 
 router.get('/messageboard', (req, res) => {
-    res.render('game/message-board')
+    res.redirect('http://tfs-forum.forumotion.com/')
 })
 
 
