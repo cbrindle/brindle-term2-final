@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const launchController = require('./controllers/launchController');
 
 router.get('/', function (req, res, next) {
     res.send('hit GAME')
@@ -20,6 +21,6 @@ router.get('/instructions', (req, res) => {
 })
 
 
-router.get('/launch', )
+router.get('/launch', launchController.gameLaunch)
 
 module.exports = router;
