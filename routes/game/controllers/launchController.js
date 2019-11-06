@@ -1,6 +1,11 @@
+const express = require('express')
+const path = require('path');
+
 module.exports = {
     gameLaunch: (req, res) => {
-        res.render('gameLaunch')
+        let app = express();
+        app.use(express.static(path.join(__dirname, 'gameFiles')));
+        res.render('index')
     }
 
 }
