@@ -166,6 +166,7 @@ module.exports = {
                         throw new Error('error from 25')
                     }
                     user.password = hash
+                    user.passchange = false
                     user.save()
                         .then(newUser => {
                             console.log(newUser.password);
