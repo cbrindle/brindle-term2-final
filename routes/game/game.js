@@ -7,7 +7,7 @@ router.get('/', function (req, res, next) {
 });
 
 
-router.get('/game/messageboard', (req, res) => {
+router.get('/messageboard', (req, res) => {
     res.render('game/messageboard')
 })
 
