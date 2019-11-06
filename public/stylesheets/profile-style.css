@@ -1,5 +1,7 @@
 body {
-    background-image: linear-gradient(to right, #724a22, white);
+    background-image: url('/images/inn-bg2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .emp-profile{
@@ -7,7 +9,7 @@ body {
     margin-top: 5%;
     margin-bottom: 3%;
     border-radius: 0.5rem;
-    background: #fff;
+    background-color: rgba(255, 255, 255, 0.15);
 }
 .profile-img{
     text-align: center;
