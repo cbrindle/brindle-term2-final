@@ -32,7 +32,7 @@ mongoose.connect(process.env.MONGODB_URI,
 let app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, ['views', 'gameFiles']));
+app.set('views', [path.join(__dirname, 'views'), path.join(__dirname, 'gameFiles')]);
 app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
