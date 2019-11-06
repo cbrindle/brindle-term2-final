@@ -56,7 +56,7 @@ router.post('/passwordrecovery', userController.recoverPassword)
 
 
 router.get('/passwordrecovery/:email', (req, res) => {
-  User.findOne({ email: req.params.email })
+  User.findOne({ _id: req.params.email })
     .then(user => {
       if (!user) {
         res.render('home/home')

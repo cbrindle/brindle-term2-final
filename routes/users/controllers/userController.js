@@ -124,7 +124,7 @@ module.exports = {
                                 from: 'tfs.userrecovery@gmail.com',
                                 to: `${req.body.email}`,
                                 subject: 'Tales from Swiftfell Account Recovery',
-                                html: `Please <a href="https://tfs-chapter1.herokuapp.com/user/passwordrecovery/${req.body.email}">CLICK HERE</a> to change your password.`
+                                html: `Please <a href="https://tfs-chapter1.herokuapp.com/user/passwordrecovery/${user._id}">CLICK HERE</a> to change your password.`
                             }
 
                             transporter.sendMail(mailOptions, (err, info) => {
