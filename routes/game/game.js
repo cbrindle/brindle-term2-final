@@ -7,11 +7,6 @@ router.get('/', function (req, res, next) {
 });
 
 
-router.get('/messageboard', (req, res) => {
-    res.redirect('http://tfs-forum.forumotion.com/')
-})
-
-
 router.get('/instructions', (req, res) => {
     if (req.isAuthenticated()) {
         return res.render('game/instructions')
