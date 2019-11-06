@@ -150,7 +150,7 @@ module.exports = {
     },
 
     updatePassword: (req, res) => {
-        User.findOne({ email: req.params.email })
+        User.findOne({ _id: req.params.email })
             .then(user => {
                 if (req.body.password === '' || req.body.password === '') {
                     req.flash('errors', 'Password field cannot be blank')
