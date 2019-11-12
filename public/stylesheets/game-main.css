@@ -1,7 +1,9 @@
 body {
+    box-sizing: border-box;
     background-image: url('/images/title-bg-mod.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .project-font {
@@ -41,4 +43,14 @@ a:hover {
     color: black;
     font-family: 'Courgette', cursive;
     font-size: 1.7em;
+}
+
+@media (max-width: 600px) {
+    #main-left {
+        display: none;
+    }
+
+    #main-right {
+        grid-area: 1 / 1 / span 1 / span 2;
+    }
 }

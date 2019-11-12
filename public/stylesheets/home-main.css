@@ -96,3 +96,81 @@
 .card {
     border: 1px solid black;
 }
+
+#sign-up-button {
+        width: 10vw;
+    }
+
+.hide-me {
+    color: blue;
+}
+
+@media (max-width: 600px) {
+    body {
+        width: 100vw;
+    }
+
+    #appSec1 {
+        height: 70vh;
+    }
+
+    #left-sec1 {
+        display: none;
+    }
+
+    #right-sec1 {
+        justify-content: center;
+        align-items: center;
+        grid-area: 1 / 1 / span 1 / span 2;
+    }
+
+    #right-sec1 img {
+        width: 100%;
+    }
+
+    #appSec2 {
+        height: 130vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #left-sec2 {
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    #left-sec2-top {
+        font-size: 1.3em;
+        grid-area: 1 / 1 / span 1 / span 1;
+        padding: 0 5% 0 5%;
+    }
+
+    #left-sec2-bottom {
+        display: flex;
+        flex-wrap: wrap;
+        grid-area: 2 / 1 / span 3 / span 1;
+    }
+    .card {
+        height: 13rem;
+    }
+
+    .card img {
+        height: 60%;
+    }
+
+    .card-text {
+        font-size: 0.7em;
+    }
+
+    #appSec3 {
+        height: 70vh;
+    }
+
+    #appSec4 {
+        height: 50vh;
+    }
+
+    #sign-up-button {
+        width: 30vw;
+    }
+}
