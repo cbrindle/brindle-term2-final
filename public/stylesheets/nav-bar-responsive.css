@@ -24,3 +24,9 @@ color: #004d40;
 .title-shadow {
     text-shadow: 2px 2px rgb(114, 114, 114);
 }
+
+@media (max-width: 700px) {
+    .navbar-brand {
+        font-size: 0.8em;
+    }
+}
