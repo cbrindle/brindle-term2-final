@@ -2,13 +2,13 @@
 
 <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: rgba(165, 42, 42, 0.75); height: 9vh;">
     
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tfs-navbar"
         aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
     <% if (!user) { %>
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <div class="collapse navbar-collapse" id="tfs-navbar">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
                 <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
@@ -44,20 +44,20 @@
 
     </div>
 
-    <div class="collapse navbar-collapse">
+    <div class="collapse navbar-collapse title-text">
         <ul class="navbar-nav mx-auto align-middle">
-            <span style="color: white; font-family: fantasy; font-size: 1.2em"><b>Tales from Swiftfell</b></span>
+            <span style="color: white; font-family: 'Courgette', cursive; font-size: 1.2em; margin: 0 0 0 20vw;"><b>Tales from Swiftfell</b></span>
         </ul>
     </div>
 
-    
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav ml-auto">
+    <link rel="stylesheet" href="/stylesheets/nav-bar-responsive.css">
+    <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarCollapse">
+        <ul class="navbar-nav logged-in-links">
             <% if (user) { %>
 
             <li class="nav-item">
                 <a href="/user/profile" class='nav-link' style="color: white;">Logged in as <span
-                        style="color: rgb(92, 223, 17)"><%= user.profile.name%>
+                        style="color: rgb(92, 223, 17);"><%= user.profile.name%>
                     </span>
                 </a>
             </li>

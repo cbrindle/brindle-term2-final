@@ -1,0 +1,23 @@
+.title-text {
+    width: 78vw;
+}
+
+@media (max-width: 1400px) {
+    .title-text {
+        width: 65vw;
+    }
+
+    .logged-in-links {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 850px) {
+    .title-text {
+        display: none;
+    }
+
+    .logged-in-links {
+        display: none;
+    }
+}
