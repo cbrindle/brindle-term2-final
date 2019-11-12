@@ -3,13 +3,28 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  width: 100vw;
 }
 
 #main-img-area {
-  animation: fadein 4s;
+  /* animation: fadein 4s; */
 }
 
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+@media (max-width: 700px) {
+  #main-img-area img {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  a {
+    padding-left: 20%;
+  }
 }

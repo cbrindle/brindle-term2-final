@@ -43,3 +43,14 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+@media (max-width: 700px) {
+  img {
+    width: 100%;
+  }
+
+  .form-resize {
+    width: 85%;
+    margin: auto;
+  }
+}

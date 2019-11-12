@@ -4,8 +4,8 @@
 <% include ../partials/head %>
 
 <body class=" text-center" style="background-image: radial-gradient(white, rgb(226, 186, 134));">
-    <link rel="stylesheet" href="/stylesheets/signin.css">
     <% include ../partials/nav %>
+
     <img src="/images/scroll.png" style="position: absolute; justify-self: center; align-self: center; z-index: -1;" height="100%">
 
     <% for (let err of loginMessage) { %>
@@ -33,18 +33,18 @@
 
         <!-- <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1> -->
         <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="text" id="inputEmail" class="form-control" placeholder="Email address" name="email">
+        <input type="text" id="inputEmail" class="form-control form-resize" placeholder="Email address" name="email">
         <br>
         <label for="inputPassword" class="sr-only">Password</label>
-        <input type="text" id="inputPassword" class="form-control" placeholder="Password" name="password">
+        <input type="text" id="inputPassword" class="form-control form-resize" placeholder="Password" name="password">
         <br>
-        <button class="btn btn-lg btn-primary btn-block" type="submit" style="font-family: fantasy;">Sign In</button>
+        <button class="btn btn-lg btn-primary btn-block form-resize" type="submit" style="font-family: fantasy;">Sign In</button>
         <br>
         <a style="color: blue; font-family: fantasy;" href="/user/passwordrecovery"><b>Click here to recover password</b></a>
     </form>
     
     </a>
+
+    <link rel="stylesheet" href="/stylesheets/signin.css">
 </body>
-
-
 </html>
