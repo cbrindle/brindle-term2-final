@@ -15,6 +15,8 @@ router.get('/instructions', (req, res) => {
     }
 })
 
+router.get('/messageBoard', launchController.messageLaunch)
+
 
 router.get('/launch', launchController.gameLaunch)
 

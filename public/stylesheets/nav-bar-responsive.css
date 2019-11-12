@@ -1,23 +1,26 @@
-.title-text {
-    width: 78vw;
+.fa-1x {
+font-size: 1.5rem;
+}
+.navbar-toggler.toggler-example {
+cursor: pointer;
+}
+.dark-blue-text {
+color: #0A38F5;
+}
+.dark-pink-text {
+color: #AC003A;
+}
+.dark-amber-text {
+color: #ff6f00;
+}
+.dark-teal-text {
+color: #004d40;
 }
 
-@media (max-width: 1400px) {
-    .title-text {
-        width: 65vw;
-    }
-
-    .logged-in-links {
-        font-size: 0.9em;
-    }
+.main-bg-color {
+    background-image: linear-gradient(to bottom right, #00705e, rgb(1, 175, 175));
 }
 
-@media (max-width: 850px) {
-    .title-text {
-        display: none;
-    }
-
-    .logged-in-links {
-        display: none;
-    }
+.title-shadow {
+    text-shadow: 2px 2px rgb(114, 114, 114);
 }
