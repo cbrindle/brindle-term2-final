@@ -7,7 +7,7 @@ body {
 }
 
 #main-img-area {
-  /* animation: fadein 4s; */
+  animation: fadein 4s;
 }
 
 @keyframes fadein {
