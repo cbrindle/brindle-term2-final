@@ -113,10 +113,18 @@ body {
 }
 
 #main-characters {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+    display: grid;
+    height: 250vh;
     background-image: url('/images/basic-bg2.png');
     background-size: cover;
     background-position-y: bottom;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 100%;
+}
+
+#main-characters-center {
+    display: flex;
+    flex-direction: column;
+    grid-area: 1 / 2 / span 1 / span 1;
+    align-items: center;
 }
