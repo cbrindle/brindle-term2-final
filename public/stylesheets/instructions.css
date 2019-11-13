@@ -1,9 +1,10 @@
 body {
     font-family: 'Courgette', cursive;
-    background-color: #029F9B;
+    background-image: linear-gradient(to right, #00705e, rgb(1, 175, 175));
+    color: black;
 }
 
-#app {
+.bg-image {
     background-image: url('/images/basic-bg2.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -15,7 +16,10 @@ body {
 }
 
 #main-sec1 {
-    
+    background-image: url('/images/basic-bg2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 0px, right;
 }
 
 #title-img {
@@ -31,7 +35,7 @@ body {
 
 #swiftfell-lore {
     display: grid;
-    grid-template-columns: 66.6% 33.3%;
+    grid-template-columns: 60% 40%;
     grid-template-rows: 100%;
     height: 100vh;
 }
@@ -47,16 +51,17 @@ body {
     display: flex;
     grid-area: 1 / 2 / span 1 / span 1;
     background-image: url('/images/fantasy-village1.jpg');
-    background-size: 94%;
+    background-size: 75%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position-x: 8%;
+    background-position-y: 50%;
 }
 
 #basic-controls {
     display: grid;
     grid-template-columns: 33.3% 66.6%;
     grid-template-rows: 100%;
-    height: 100vh;
+    height: 105vh;
 }
 
 #basic-controls-left {
@@ -75,11 +80,15 @@ body {
     font-size: 1.3em;
 }
 
+#basic-controls-right p {
+    padding-right: 10vw;
+}
+
 #combat-basics {
     display: grid;
     grid-template-columns: 66.6% 33.3%;
     grid-template-rows: 100%;
-    height: 100vh;
+    height: 145vh;
 }
 
 #combat-basics-left {
@@ -90,6 +99,10 @@ body {
     font-size: 1.3em;
 }
 
+#combat-basics-left p {
+    padding-left: 7vw;
+}
+
 #combat-basics-right {
     display: grid;
     grid-area: 1 / 2 / span 1 / span 1;
@@ -97,4 +110,13 @@ body {
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+#main-characters {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('/images/basic-bg2.png');
+    background-size: cover;
+    background-position-y: bottom;
 }
