@@ -1,0 +1,91 @@
+body {
+    font-family: 'Courgette', cursive;
+    background-image: url('/images/basic-bg2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.text-shadowing {
+    text-shadow: 2px 2px rgb(146, 146, 146);
+}
+
+#main-sec1 {
+    
+}
+
+#intro-text {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    text-align: center;
+    font-size: 1.35em;
+}
+
+#swiftfell-lore {
+    display: grid;
+    grid-template-columns: 66.6% 33.3%;
+    grid-template-rows: 100%;
+    height: 100vh;
+}
+
+#swiftfell-lore-left {
+    display: flex;
+    flex-direction: column;
+    grid-area: 1 / 1 / span 1 / span 1;
+    align-items: center;
+}
+
+#swiftfell-lore-right {
+    display: flex;
+    grid-area: 1 / 2 / span 1 / span 1;
+    background-image: url('/images/fantasy-village1.jpg');
+    background-size: 94%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#basic-controls {
+    display: grid;
+    grid-template-columns: 33.3% 66.6%;
+    grid-template-rows: 100%;
+    height: 100vh;
+}
+
+#basic-controls-left {
+    display: flex;
+    flex-direction: column;
+    background-image: url('/images/controls.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#basic-controls-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3em;
+}
+
+#combat-basics {
+    display: grid;
+    grid-template-columns: 66.6% 33.3%;
+    grid-template-rows: 100%;
+    height: 100vh;
+}
+
+#combat-basics-left {
+    display: flex;
+    flex-direction: column;
+    grid-area: 1 / 1 / span 1 / span 1;
+    align-items: center;
+}
+
+#combat-basics-right {
+    display: grid;
+    grid-area: 1 / 2 / span 1 / span 1;
+    background-image: url('/images/combat-basics.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
