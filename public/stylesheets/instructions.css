@@ -1,5 +1,9 @@
 body {
     font-family: 'Courgette', cursive;
+    background-color: #029F9B;
+}
+
+#app {
     background-image: url('/images/basic-bg2.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -12,6 +16,10 @@ body {
 
 #main-sec1 {
     
+}
+
+#title-img {
+    padding-top: 12vh;
 }
 
 #intro-text {
@@ -79,6 +87,7 @@ body {
     flex-direction: column;
     grid-area: 1 / 1 / span 1 / span 1;
     align-items: center;
+    font-size: 1.3em;
 }
 
 #combat-basics-right {
