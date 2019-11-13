@@ -114,7 +114,7 @@ body {
 
 #main-characters {
     display: grid;
-    height: 250vh;
+    height: 300vh;
     background-image: url('/images/basic-bg2.png');
     background-size: cover;
     background-position-y: bottom;
