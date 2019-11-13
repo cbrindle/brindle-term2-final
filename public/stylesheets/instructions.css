@@ -38,6 +38,7 @@ body {
     grid-template-columns: 60% 40%;
     grid-template-rows: 100%;
     height: 100vh;
+    background-position-y: center;
 }
 
 #swiftfell-lore-left {
