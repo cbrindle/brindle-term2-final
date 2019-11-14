@@ -47,7 +47,7 @@ a:hover {
     font-size: 1.7em;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
     #main-left {
         display: none;
     }
@@ -60,5 +60,15 @@ a:hover {
 
     #game-menu-text {
         width: 90%;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 900px) {
+    #main-right {
+        padding-top: 5vh;
+    }
+
+    #launch-btn {
+        margin-bottom: 10vh;
     }
 }
