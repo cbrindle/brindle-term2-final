@@ -182,6 +182,7 @@ body {
 
 
 
+
 @media (max-width: 700px) {
     #title-img img {
         width: 70%;
@@ -308,6 +309,157 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
         padding-top: 10vh;
+    }
+
+    #main-characters-center3 {
+        padding: 0 5vw 0 5vw;
+        height: 110vh;
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 10vh;
+    }
+
+    #main-characters-center4 {
+        padding: 0 5vw 0 5vw;
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 6vh;
+    }
+}
+
+
+
+@media (max-width: 900px) and (orientation: landscape) {
+    #title-img img {
+        width: 70%;
+        padding-top: 0;
+    }
+
+    #intro-text {
+        font-size: 1em;
+    }
+
+    #main-sec1 {
+        background-position: initial;
+    }
+
+    #swiftfell-lore {
+        height: 130vh;
+        width: 100vw;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+    }
+
+    #swiftfell-lore-left {
+        grid-area: 1 / 1 / span 1 / span 1;
+        font-size: 0.6em;
+        padding: 0 7vw 0 7vw;
+        
+    }
+
+    #swiftfell-lore-left h1 {
+        font-size: 1.5em;
+    }
+
+    #swiftfell-lore-right {
+        grid-area: 1 / 1 / span 1 / span 1;
+        background-size: 30%;
+        background-position: center;
+        opacity: 0.4;
+        background-position-y: 35%;
+    }
+
+    #basic-controls {
+        background-size: cover;
+        padding-top: 0;
+        background-repeat: no-repeat;
+        grid-template-columns: 100%;
+        height: 100vh;
+    }
+
+    #basic-controls-left {
+        grid-area: 1 / 1 / span 1 / span 1;
+        background-position-x: 50%;
+        background-position-y: 50%;
+        opacity: 0.3;
+        background-size: 25%;
+    }
+
+    #basic-controls-right {
+        font-size: 0.7em;
+        padding-left: 1vw;
+        grid-area: 1 / 1 / span 1 / span 1;
+        padding-left: 9vw;
+        height: 80vh;
+    }
+    
+    #basic-controls-right h1 {
+        font-size: 1.5em;
+    }
+
+    #combat-basics {
+        height: 165vh;
+        grid-template-columns: 100%;
+    }
+
+    #combat-basics-left {
+        font-size: 0.7em;
+        grid-area: 1 / 1 / span 1 / span 1;
+        padding-right: 8vw;
+    }
+
+    #combat-basics-left h1 {
+        font-size: 1.5em;
+    }
+
+    #combat-basics-right {
+        grid-area: 1 / 1 / span 1 / span 1;
+        background-size: 25%;
+        opacity: 0.4;
+        background-position: center;
+        background-position-y: 35%;
+    }
+
+    #combat-basics-right img {
+        display: none;
+    }
+
+    .char-name {
+        font-size: 1.3em;
+    }
+
+    #main-characters {
+        font-size: 0.7em;
+
+    }
+
+    #main-characters h1 {
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+
+    #main-characters img {
+        height: 56px;
+        width: 56px;
+    }
+
+    #main-characters-center1 {
+        padding: 0 5vw 0 5vw;
+        height: 135vh;
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #main-characters-center2 {
+        padding: 0 5vw 0 5vw;
+        height: 130vh;
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 1vh;
     }
 
     #main-characters-center3 {
