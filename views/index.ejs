@@ -4,12 +4,19 @@
 <% include ./partials/head %>
 
 <body>
-    
-    <div id="main-img-area" class="row" style="height: 100vh;">
-        <a class="mx-auto mt-auto mb-auto" href="/home"><img style="height: 80%; border-radius: 7px;" src="/images/title-img2.jpg"></a>
+    <div id="app">
+        <div id="main-img-area">
+            <img onclick="link()" src="/images/title-img2.jpg" />
+        </div>
     </div>
 
 
 <link rel="stylesheet" href="/stylesheets/style-title.css">
+
+<script>
+function link() {
+    window.location = '/home';
+}
+</script>
 </body>
 </html>
