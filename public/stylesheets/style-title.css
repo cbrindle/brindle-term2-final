@@ -1,5 +1,5 @@
 body {
-  
+  width: 100vw;
 }
 
 #app {
@@ -24,6 +24,18 @@ body {
 
 img {
   cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  img {
+    height: 70%;
+  }
+}
+
+@media (orientation: landscape) {
+  img {
+    height: 85%;
+  }
 }
 
 @keyframes fadein {
