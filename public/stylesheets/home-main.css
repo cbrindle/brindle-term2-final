@@ -1,5 +1,6 @@
 body {
     font-family: 'Courgette', cursive;
+    width: 100vw;
 }
 
 .main-font {
@@ -105,7 +106,7 @@ body {
     color: blue;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
     body {
         width: 100vw;
     }
