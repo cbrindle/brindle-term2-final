@@ -74,6 +74,7 @@ body {
 #basic-controls-left {
     display: flex;
     flex-direction: column;
+    grid-area: 1 / 1 / span 1 / span 1;
     background-image: url('/images/controls.png');
     background-size: 80%;
     background-repeat: no-repeat;
@@ -83,6 +84,7 @@ body {
 #basic-controls-right {
     display: flex;
     flex-direction: column;
+    grid-area: 1 / 2 / span 1 / span 1;
     align-items: center;
     font-size: 1.3em;
 }
@@ -158,6 +160,7 @@ body {
 @media (max-width: 700px) {
     #title-img img {
         width: 70%;
+        padding-top: 0;
     }
 
     #intro-text {
@@ -166,13 +169,15 @@ body {
 
     #swiftfell-lore {
         background-position: center;
-        height: 60vh;
+        height: 74vh;
         grid-template-columns: 100%;
         grid-template-rows: 70% 30%;
     }
 
     #swiftfell-lore-left {
         grid-area: 1 / 1 / span 1 / span 1;
+        font-size: 0.6em;
+        padding: 0 7vw 0 7vw;
         
     }
 
@@ -184,5 +189,51 @@ body {
         grid-area: 2 / 1 / span 1 / span 1;
         background-size: 20%;
         background-position: center;
+    }
+
+    #basic-controls {
+        height: 70vh;
+    }
+
+    #basic-controls-right {
+        font-size: 0.7em;
+        padding-left: 1vw;
+
+    }
+    
+    #basic-controls-right h1 {
+        font-size: 1.5em;
+    }
+
+    #combat-basics {
+        height: 85vh;
+        background-image: none;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+    }
+
+    #combat-basics-left {
+        font-size: 0.7em;
+        grid-area: 1 / 1 / span 1 / span 1;
+        background-image: url('/images/basic-bg2.png');
+        background-position: center;
+        background-size: cover;
+        padding-right: 8vw;
+    }
+
+    #combat-basics-left h1 {
+        font-size: 1.5em;
+    }
+
+    #combat-basics-right {
+        grid-area: 2 / 1 / span 1 / span 1;
+        z-index: -1;
+        background-image: url('/images/basic-bg2.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    #combat-basics-right img {
+        display: none;
     }
 }
