@@ -123,36 +123,59 @@ body {
 
 #main-characters {
     display: grid;
-    height: 200vh;
+    height: 390vh;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 30% 23.3% 23.3% 23.3%
+}
+
+#main-characters-center1 {
+    display: flex;
+    flex-direction: column;
+    grid-area: 1 / 1 / span 1 / span 3;
+    align-items: center;
     background-image: url('/images/basic-bg2.png');
-    background-size: cover;
     background-position: center;
-    grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 100%;
-}
-
-#main-characters-center {
-    display: flex;
-    flex-direction: column;
-    grid-area: 1 / 2 / span 1 / span 1;
-    align-items: center;
-}
-
-#main-characters-bottom {
-    display: grid;
-    height: 190vh;
-    background-image: url('/images/basic-bg2.png');
     background-size: cover;
-    background-position-y: bottom;
-    grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 100%;
+    padding-left: 20vw;
+    padding-right: 20vw;
 }
 
-#main-characters-center-bottom {
+#main-characters-center2 {
     display: flex;
     flex-direction: column;
-    grid-area: 1 / 2 / span 1 / span 1;
+    grid-area: 2 / 1 / span 1 / span 3;
     align-items: center;
+    background-image: url('/images/basic-bg2.png');
+    background-position: center;
+    background-size: cover;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-top: 1vw;
+}
+
+#main-characters-center3 {
+    display: flex;
+    flex-direction: column;
+    grid-area: 3 / 1 / span 1 / span 3;
+    align-items: center;
+    background-image: url('/images/basic-bg2.png');
+    background-position: center;
+    background-size: cover;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+#main-characters-center4 {
+    display: flex;
+    flex-direction: column;
+    grid-area: 4 / 1 / span 1 / span 3;
+    align-items: center;
+    background-image: url('/images/basic-bg2.png');
+    background-position: bottom;
+    background-size: cover;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-top: 5vh;
 }
 
 
@@ -235,5 +258,9 @@ body {
 
     #combat-basics-right img {
         display: none;
+    }
+
+    .char-name {
+        font-size: 1.3em;
     }
 }
