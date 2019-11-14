@@ -47,6 +47,11 @@ body {
     flex-direction: column;
     grid-area: 1 / 1 / span 1 / span 1;
     align-items: center;
+    font-size: 1.1em;
+}
+#swiftfell-lore-left p {
+    padding-left: 7vw;
+    padding-right: 1vw;
 }
 
 #swiftfell-lore-right {
