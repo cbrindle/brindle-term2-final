@@ -5,6 +5,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Courgette', cursive;
+    width: 100vw;
 }
 
 .project-font {
@@ -53,5 +54,11 @@ a:hover {
 
     #main-right {
         grid-area: 1 / 1 / span 1 / span 2;
+        padding: 0 3vw 0 3vw;
+        font-size: 1.5em;
+    }
+
+    #game-menu-text {
+        width: 90%;
     }
 }
