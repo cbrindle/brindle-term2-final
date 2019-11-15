@@ -5,7 +5,7 @@ body {
 
 #title-sec {
     display: grid;
-    height: 100vh;
+    height: 90vh;
     background-image: url('/images/title-bg.jpg');
     background-position-y: center;
     background-size: cover;
@@ -29,4 +29,48 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 2;
+}
+
+#dragon-battle-sec {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+#dragon-battle-sec {
+    grid-area: 1 / 1 / span 1 / span 1;
+    background-image: url('/images/dragon-battle.jpg');
+    background-position-y: center;
+    background-size: cover;
+    opacity: 0.4;
+}
+
+#card-sec {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+#card-sec-img {
+    grid-area: 1 / 1 / span 1 / span 1;
+    background-image: url('/images/world-map-mod.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#signup-sec {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+}
+
+#signup-sec-img {
+    grid-area: 1 / 1 / span 1 / span 1;
+    background-image: url('/images/hero-sec4.jpg');
+    background-position: center;
+    background-size: cover;
+    opacity: 0.4;
 }
