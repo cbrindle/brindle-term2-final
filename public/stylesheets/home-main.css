@@ -51,7 +51,7 @@ body {
     align-items: center;
     justify-content: center;
     grid-area: 1 / 1 / span 1 / span 1;
-    font-size: 1.5em;
+    font-size: 1.55em;
     padding: 0 5vw 0 5vw;
     z-index: 2;
 }
