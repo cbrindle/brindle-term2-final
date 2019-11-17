@@ -169,3 +169,50 @@ body {
 #signup-sec-text .btn {
     width: 20%;
 }
+
+@media (max-width: 900px) {
+    #title-sec-text img {
+        width: 100%;
+    }
+
+    #dragon-sec-text {
+        text-align: center;
+    }
+
+    #card-sec {
+        height: 160vh;
+    }
+
+    #card-sec-text {
+        grid-template-columns: 100%;
+        grid-template-rows: 33.3% 33.3% 33.3%;
+    }
+
+    #card-sec-text-middle {
+        grid-area: 2 / 1 / span 1 / span 1;
+        padding: 3vh 0 3vh 0;
+
+    }
+
+    #card-sec-text-right {
+        grid-area: 3 / 1 / span 1 / span 1;
+    }
+
+    .title-card {
+        height: 30vh;
+    }
+
+    #signup-sec-field {
+        width: 90vw;
+    }
+
+    #signup-sec-text p {
+        margin: 0 10vw 0 10vw;
+        text-align: center;
+        font-size: 0.85em;
+    }
+
+    #signup-sec-text .button {
+        width: 40vw;
+    }
+}
