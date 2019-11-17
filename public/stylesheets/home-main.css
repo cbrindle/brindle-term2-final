@@ -118,8 +118,11 @@ body {
 .tfs-card-bottom {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
     grid-area: 2 / 1 / span 1 / span 1;
-    background-color: tan;
+    background-image: linear-gradient(to right, sandybrown, rgb(226, 210, 188));
+    opacity: 0.9;
 }
 
 #signup-sec {
