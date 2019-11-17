@@ -70,6 +70,58 @@ body {
     background-size: cover;
 }
 
+#card-sec-text {
+    display: grid;
+    grid-area: 1 / 1 / span 1 / span 1;
+    grid-template-rows: 100%;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+#card-sec-text-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+
+#card-sec-text-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: 1 / 2 / span 1 / span 1;
+}
+
+#card-sec-text-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: 1 / 3 / span 1 / span 1;
+}
+
+.tfs-card {
+    height: 50vh;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 60% 40%;
+    border-radius: 10px;
+}
+
+.tfs-card-top {
+    display: flex;
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+
+.tfs-card-bottom {
+    display: flex;
+    flex-direction: column;
+    grid-area: 2 / 1 / span 1 / span 1;
+    background-color: tan;
+}
+
 #signup-sec {
     display: grid;
     grid-template-columns: 1fr;
