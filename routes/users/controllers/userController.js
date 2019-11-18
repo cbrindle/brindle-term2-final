@@ -6,9 +6,13 @@ require('dotenv').config()
 
 module.exports = {
     signup: (req, res, next) => {
-        if (req.validationErrors()) {
-            res.render('auth/signup')
-            return
+        if (req.body.name === '' || req.body.email === '' || req.body.password === '' || req.body.password2 === '') {
+            req.flash('errors', 'All fields must be filled out')
+            return res.redirect('/user/signup')
+        }
+        if (req.body.password != req.body.password2) {
+            req.flash('errors', 'Passwords do not match')
+            return res.redirect('/user/signup')
         }
         User.findOne({ email: req.body.email }, (err, user) => {
             if (err) {
@@ -22,11 +26,6 @@ module.exports = {
                 newUser.email = req.body.email
                 newUser.profile.name = req.body.name
                 newUser.profile.picture = getGravatar(req.body.email)
-                if (req.body.adminCode === 'admin') {
-                    newUser.admin = true;
-                } else {
-                    newUser.admin = false;
-                }
 
                 bcrypt.hash(req.body.password, 10, (err, hash) => {
                     if (err) {

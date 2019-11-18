@@ -17,7 +17,7 @@ router.get('/signup', (req, res) => {
   res.render('user/signup')
 })
 
-router.post('/signup', signUpValidation, userController.signup)
+router.post('/signup', userController.signup)
 
 router.get('/signin', (req, res) => {
   if (req.isAuthenticated()) return res.redirect('/')

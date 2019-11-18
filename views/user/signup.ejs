@@ -3,44 +3,42 @@
 
 <% include ../partials/head %>
 
-<link rel="stylesheet" href="/stylesheets/signin.css">                                                                                             
 
-<body class=" text-center" style="background-image: radial-gradient(white, rgb(226, 186, 134));">
+<body>
     <% include ../partials/nav %>
-    <img src="/images/scroll.png" style="justify-self: center; align-self: center; z-index: -1; position: absolute;" height="100%" />
-    <br>
+    <div id="app">
+        <div id="sign-in-area">
+            <img src="/images/scroll.png">
+        </div>
+        <div id ="form-area">
+            <form class="form-signin" method="POST" action="/user/signup" width="50%">
+                
+                <%for (let err of errors){%>
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <%= err%>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <%}%>
+                        <label for="inputName" class="sr-only">Name</label>
+                        <input type="text" id="inputName" class="form-control form-resize" placeholder="Name" name="name">
+                        <br>
+                        <label for="inputEmail" class="sr-only">Email address</label>
+                        <input type="text" id="inputEmail" class="form-control form-resize" placeholder="Email address" name="email">
+                        <br>
+                        <label for="inputPassword" class="sr-only">Password</label>
+                        <input type="text" id="inputPassword" class="form-control form-resize" placeholder="Password" name="password">
+                        <br>
+                        <input type="text" id="inputPassword2" class="form-control form-resize" placeholder="Confirm Password" name="password2">
+                        <br>
+                        <button class="btn btn-lg btn-primary btn-block form-resize" type="submit" style="font-family: fantasy;">Sign up</button>
+            </form>
+        </div>
+    </div>
 
-    <form class="form-signin" method="POST" action="/user/signup" width="50%">
-        <%for (let i= 0 ; i <errors.length; i++){%>
-        <div class="alert alert-danger alert-dismissible fade show" role="alert">
-            <%= errors[i].message%>
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-        <%}%>
-        <%for (let err of errors){%>
-        <div class="alert alert-danger alert-dismissible fade show" role="alert">
-            <%= err%>
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-        <%}%>
-        <label for="inputName" class="sr-only">Name</label>
-        <input type="text" id="inputName" class="form-control form-resize" placeholder="Name" name="name">
-        <br>
-        <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="text" id="inputEmail" class="form-control form-resize" placeholder="Email address" name="email">
-        <br>
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="text" id="inputPassword" class="form-control form-resize" placeholder="Password" name="password">
-        <br>
-        <input type="text" id="inputAdmin" class="form-control form-resize" placeholder="admin code" name="adminCode">
-        <br>
-        <button class="btn btn-lg btn-primary btn-block form-resize" type="submit" style="font-family: fantasy;">Sign up</button>
-    </form>
+        
+
+<link rel="stylesheet" href="/stylesheets/signin.css">
 </body>
-
-
 </html>

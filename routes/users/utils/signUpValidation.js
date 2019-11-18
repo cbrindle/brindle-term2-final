@@ -3,7 +3,7 @@ const userValidation = (req, res, next) => {
     req.checkBody('email', 'Email is required').notEmpty()
     req.checkBody('password', 'Password is required').notEmpty()
 
-    req.flash('errorValidate', req.validationErrors())
+    req.flash('errors', req.validationErrors())
 
     next()
 }
