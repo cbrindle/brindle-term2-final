@@ -170,7 +170,7 @@ module.exports = {
                         .then(newUser => {
                             console.log(newUser.password);
                             req.flash('success', 'You have updated your password successfully!')
-                            res.render('user/signin')
+                            res.redirect('/user/signin')
                         })
                         .catch(err => {
                             throw Error(err)
