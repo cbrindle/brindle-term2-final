@@ -19,7 +19,7 @@ As the world grows larger, so have the forces of evil. As a result, Swiftfell He
 
 **Directional Keys:** Move your character up, down, left, and right. By default, your character will move at walking speed.
 
-**Z: General action key.** Press Z to talk to people, interact with the environment, advance text dialogue, and confirm menu selections.
+**Z:** General action key. Press Z to talk to people, interact with the environment, advance text dialogue, and confirm menu selections.
 
 **X:** Cancel or alternate action key. Press X to cancel a menu selection or to pull up the character menu when outside of battle.
 
