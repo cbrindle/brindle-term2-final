@@ -169,7 +169,8 @@ module.exports = {
                     user.save()
                         .then(newUser => {
                             console.log(newUser.password);
-                            res.render('user/signin', { success: 'You password has been updated successfully!' })
+                            req.flash('success', 'You have updated your password successfully!')
+                            res.render('user/signin')
                         })
                         .catch(err => {
                             throw Error(err)
