@@ -12,8 +12,8 @@ null,
 {"id":10,"expanded":false,"name":"itmShop","order":11,"parentId":1,"scrollX":819,"scrollY":453},
 {"id":11,"expanded":true,"name":"heroAcademy","order":12,"parentId":1,"scrollX":1225.5,"scrollY":670.5},
 {"id":12,"expanded":false,"name":"overworld","order":1,"parentId":0,"scrollX":2429,"scrollY":1340},
-{"id":13,"expanded":false,"name":"academyTest","order":14,"parentId":11,"scrollX":1225.5,"scrollY":670.5},
-{"id":14,"expanded":false,"name":"academyCrystal","order":15,"parentId":11,"scrollX":1225.5,"scrollY":670.5},
+{"id":13,"expanded":false,"name":"academyTest","order":14,"parentId":11,"scrollX":1089.3333333333333,"scrollY":596},
+{"id":14,"expanded":false,"name":"academyCrystal","order":15,"parentId":11,"scrollX":1089.3333333333333,"scrollY":596},
 {"id":15,"expanded":true,"name":"heroHome1stFl-pt2","order":6,"parentId":4,"scrollX":1225.5,"scrollY":670.5},
-{"id":16,"expanded":false,"name":"newGameLoading","order":16,"parentId":0,"scrollX":1225.5,"scrollY":670.5}
+{"id":16,"expanded":false,"name":"newGameLoading","order":16,"parentId":0,"scrollX":1089.3333333333333,"scrollY":596}
 ]
