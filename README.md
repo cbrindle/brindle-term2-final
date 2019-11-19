@@ -17,32 +17,32 @@ As the world grows larger, so have the forces of evil. As a result, Swiftfell He
 
 ### Controls
 
-Directional Keys: Move your character up, down, left, and right. By default, your character will move at walking speed.
+**Directional Keys:** Move your character up, down, left, and right. By default, your character will move at walking speed.
 
-Z: General action key. Press Z to talk to people, interact with the environment, advance text dialogue, and confirm menu selections.
+**Z: General action key.** Press Z to talk to people, interact with the environment, advance text dialogue, and confirm menu selections.
 
-X: Cancel or alternate action key. Press X to cancel a menu selection or to pull up the character menu when outside of battle.
+**X:** Cancel or alternate action key. Press X to cancel a menu selection or to pull up the character menu when outside of battle.
 
-Shift (Hold): Dash. Hold down the Shift key to move at Dash speed. Note that all maps, like the Overworld, do not allow your Hero to dash.
+**Shift (Hold):** Dash. Hold down the Shift key to move at Dash speed. Note that all maps, like the Overworld, do not allow your Hero to dash.
 
-Mouse Click or Screen Touch: Click, or touch if playing on a mobile device, to move your Hero to the specified location, interact with an NPC or object, or confirm menu selection.
+**Mouse Click or Screen Touch:** Click, or touch if playing on a mobile device, to move your Hero to the specified location, interact with an NPC or object, or confirm menu selection.
 
 
 ### Combat Basics
 
-Turn-Based Combat: TFS utilizes a turn-based combat system. At the start of a combat turn, you select an action for each of your party members. Once all selections have been made, an agility stat calculation is made to determine the order of actions carried out.
+**Turn-Based Combat:** TFS utilizes a turn-based combat system. At the start of a combat turn, you select an action for each of your party members. Once all selections have been made, an agility stat calculation is made to determine the order of actions carried out.
 
-Attack: Using your Hero's equipped weapon, attack a selected target to deal damage. Classes that have strong Attack ability are Hero and Warrior.
+**Attack:** Using your Hero's equipped weapon, attack a selected target to deal damage. Classes that have strong Attack ability are Hero and Warrior.
 
-Guard: Your Hero takes up a defensive posture and guards against any incoming physical attack that round. Typically, the damage your Hero would have taken is reduced by 50%.
+**Guard:** Your Hero takes up a defensive posture and guards against any incoming physical attack that round. Typically, the damage your Hero would have taken is reduced by 50%.
 
-Magic: Select a spell to cast that round. A spell may deal damage, heal a Hero, grant a status buff, or inflict a status aliment on an enemy.
+**Magic:** Select a spell to cast that round. A spell may deal damage, heal a Hero, grant a status buff, or inflict a status aliment on an enemy.
 
-Special: Every combat action your Hero takes earns him/her Technique Points. Special moves cost various Technique Points and, like spells, can have varying effects depending on the Hero's class.
+**Special:** Every combat action your Hero takes earns him/her Technique Points. Special moves cost various Technique Points and, like spells, can have varying effects depending on the Hero's class.
 
-Item: Use an item from your inventory in combat. An item may restore a Hero's Hit Points or Magic Points, cure status aliments, or have some other effect.
+**Item:** Use an item from your inventory in combat. An item may restore a Hero's Hit Points or Magic Points, cure status aliments, or have some other effect.
 
-Escape: Allows your party to flee battle. This is best to use if your Heroes are running low on HP or if an enemy is too strong.
+**Escape:** Allows your party to flee battle. This is best to use if your Heroes are running low on HP or if an enemy is too strong.
 
 
 ### Main Characters
