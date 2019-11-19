@@ -1,44 +1,66 @@
 body {
-  width: 100vw;
+  /* animation: fadein 4s; */
 }
 
 #app {
-  display: grid;
-  grid-template-rows: 10% 80% 10%;
-  grid-template-columns: 20% 60% 20%;
   height: 100vh;
   width: 100vw;
-  background-image: url('/images/title-bg.jpg');
+  display: grid;
+  grid-template-columns: 65% 35%;
+  grid-template-rows: 100%;
+}
+
+#app::after {
+  content: "";
+  background: url('/images/new-title-img.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  opacity: 0.85;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
 }
 
-#main-img-area {
+#image-area {
   display: grid;
-  grid-area: 2 / 2 / span 1 / span 1;
-  align-items: center;
-  justify-content: center;
-  animation: fadein 4s;
+  grid-area: 1 / 2 / span 1 / span 1;
+  grid-template-columns: 100%;
+  grid-template-rows: 60% 40%;
 }
 
-img {
+#image-area-top {
+  grid-area: 1 / 1 / span 1 / span 1;
+}
+
+#image-area-bottom {
+  grid-area: 2 / 1 / span 1 / span 1;
+}
+
+#tfs-logo {
+  margin-top: 5vh;
+  margin-left: 5vw;
+}
+
+#tfs-enter {
+  margin-left: 4vw;
   cursor: pointer;
-}
-
-@media (max-width: 900px) {
-  img {
-    height: 70%;
-  }
-}
-
-@media (orientation: landscape) {
-  img {
-    height: 85%;
-  }
 }
 
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+@media (max-width: 900px) {
+  #app {
+    background-size: contain;
+  }
+
+  img {
+    /* width: 30%;
+    height: 30%; */
+  }
 }
