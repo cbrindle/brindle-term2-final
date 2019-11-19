@@ -42,6 +42,7 @@ body {
 #tfs-logo {
   margin-top: 5vh;
   margin-left: 5vw;
+  cursor: pointer;
 }
 
 #tfs-enter {
@@ -56,11 +57,26 @@ body {
 
 @media (max-width: 900px) {
   #app {
-    background-size: contain;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
   }
 
-  img {
-    /* width: 30%;
-    height: 30%; */
+  #app::after {
+    background-position-x: 57%;
+  }
+
+  #image-area {
+    grid-area: 1 / 1 / span 1 / span 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #tfs-logo {
+    margin: 0;
+  }
+
+  #image-area-bottom {
+    display: none;
   }
 }
