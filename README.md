@@ -47,3 +47,65 @@ Escape: Allows your party to flee battle. This is best to use if your Heroes are
 
 ### Main Characters
 
+**Brindle**
+Ambitious, brave, and a bit forgetful, Brindle has spent most of his life preparing to earn the title of Hero from the Swiftfell Hero's Academy. He is in his last year and is preparing to take the Hero's Exam any day now. Son of the legendary Hero, Agin, enjoys slaying monsters and the idea of adventuring across the world more than protecting the people of Sundirra Realm.
+- Class: Hero
+- Weapon Type: Short Swords
+- Magic: Support-based
+- Special: Ki-based
+
+
+**Sheryl**
+Head-strong, courageous, and quick to anger, Sheryl, too, is in her final year at the Hero's Academy. A roaming band of monsters killed her parents at a young age. She vowed that no one else should have to endure the pain she did, prompting Sheryl to seek training under famed Hero, Master. While not adept at spell casting, Sheryl's raw power and battle-rage techniques more than make up for her lack of affinity with the spiritual realm.
+- Class: Warrior
+- Weapon Type: Broad Swords
+- Magic: None
+- Special: Berserker/Damage-based
+
+
+**Jager**
+Reserved, driven, and stoic, Jager serves as the head Monk at the Marfia Monastery. Plagued by a long-standing feelings of disconnection with others, Jager moved to Marfia one year ago after failing his Hero's Exam. He was understandably devastated with his shortcomings, but has always had a connection to nature and its creatures, in which he finds comfort when feeling down.
+- Class: Priest
+- Weapon Type: Crossbows
+- Magic: Status-based
+- Special: Chaos-based
+
+
+**Gale**
+Cheerful, helpful, and a bit too naive for her own good, Gale lives at the Marfia Monastery with her twin brother, Jager. Like her brother, Gale failed her Hero's Exam one year ago and decided to move on with her life beyond training to become a Hero. She now utilizes her skills in the healing arts, which were cultivated at the Hero's Academy, to aid the people of her new home.
+- Class: Mage
+- Weapon Type: Canes
+- Magic: Element-based
+- Special: Healing-based
+
+
+**Janna**
+Caring, supportive, and quick-witted, Janna has been raising her children Brindle and Megan on her own since the passing of her late husband, Agin. In the quiet moments late into the night, she'll often feel the pains of sadness at her loss, but they quickly pass as she spends her time perfecting the next best recipe. At times, she wishes Brindle would find a different path than that of Hero training, but she is too proud of him to pay it any mind.
+- Occupation: Homemaker
+- Hobbies: Knitting and gardening
+- Noted For: Voted best cook in Swiftfell Village three-years running
+- "A house is made from wood and beams. A home is made from love and dreams."
+
+
+**Megan**
+Bright-eyed, pleasant, and good-hearted, Megan plays the typically "little sister" to Brindle. Always wanting to tag along, but never quite big enough, Megan supports the students at the Hero's Academy with baked treats made in tandem with Janna. Her love for animals leads her to care for sick and injured livestock and woodland creatures found in, and around, Swiftfell Village.
+- Occupation: None
+- Hobbies: Aiding injured farm animals and pets
+- Noted For: Acting as a "big sister" to all the small children of Swiftfell Village
+- "Just leave it to me!"
+
+
+**Master**
+Battle-hardened, salty, and wise, Master resides as the head instructor at the Hero's Academy in Swiftfell Village. Master has carried the title of Hero for many years, slaying countless monsters and upholding the sacred oath of protecting the Aeon Crystal. Only spoken in whispered rumors, Master is said to blame himself for Agin's death, resulting in his resignation, and subsequent appointment, at the Hero Academy.
+- Occupation: Head Instructor at the Swiftfell Hero's Academy
+- Hobbies: Maintaining the documentation of the history of Swiftfell as local historian
+- Noted For: Trained alongside Agin at the Hero's Academy
+- "Amateurs train until they get it right. Heroes train until they can't get it wrong."
+
+
+**Soren**
+??????
+- Occupation: ???
+- Hobbies: ???
+- Noted For: ???
+- "Power is the only constant in this world."
